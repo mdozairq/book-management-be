@@ -1,0 +1,102 @@
+[
+	{
+		"BookID": 1000,
+		"BookName": "Book 1",
+		"NumberOfCopies": 2
+	},
+	{
+		"BookID": 1001,
+		"BookName": "Book 2",
+		"NumberOfCopies": 4
+	},
+	{
+		"BookID": 1002,
+		"BookName": "Book 3",
+		"NumberOfCopies": 1
+	},
+	{
+		"BookID": 1003,
+		"BookName": "Book 4",
+		"NumberOfCopies": 3
+	},
+	{
+		"BookID": 1004,
+		"BookName": "Book 5",
+		"NumberOfCopies": 1
+	},
+	{
+		"BookID": 1005,
+		"BookName": "Book 6",
+		"NumberOfCopies": 2
+	},
+	{
+		"BookID": 1006,
+		"BookName": "Book 7",
+		"NumberOfCopies": 4
+	},
+	{
+		"BookID": 1007,
+		"BookName": "Book 8",
+		"NumberOfCopies": 4
+	},
+	{
+		"BookID": 1008,
+		"BookName": "Book 9",
+		"NumberOfCopies": 3
+	},
+	{
+		"BookID": 1009,
+		"BookName": "Book 10",
+		"NumberOfCopies": 1
+	},
+	{
+		"BookID": 1010,
+		"BookName": "Book 11",
+		"NumberOfCopies": 5
+	},
+	{
+		"BookID": 1011,
+		"BookName": "Book 12",
+		"NumberOfCopies": 5
+	},
+	{
+		"BookID": 1012,
+		"BookName": "Book 13",
+		"NumberOfCopies": 4
+	},
+	{
+		"BookID": 1013,
+		"BookName": "Book 14",
+		"NumberOfCopies": 3
+	},
+	{
+		"BookID": 1014,
+		"BookName": "Book 15",
+		"NumberOfCopies": 3
+	},
+	{
+		"BookID": 1015,
+		"BookName": "Book 16",
+		"NumberOfCopies": 5
+	},
+	{
+		"BookID": 1016,
+		"BookName": "Book 17",
+		"NumberOfCopies": 4
+	},
+	{
+		"BookID": 1017,
+		"BookName": "Book 18",
+		"NumberOfCopies": 1
+	},
+	{
+		"BookID": 1018,
+		"BookName": "Book 19",
+		"NumberOfCopies": 4
+	},
+	{
+		"BookID": 1019,
+		"BookName": "Book 20",
+		"NumberOfCopies": 5
+	}
+]
