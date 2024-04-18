@@ -18,8 +18,15 @@ export class CreateCirculationDto {
     date: Date
 }
 
-export const createCirculationValidation = JOI.object({
-    eventtype: JOI.string().allow(EventType.CHECKOUT, EventType.RETURN).required(),
+export const createCheckoutCirculationValidation = JOI.object({
+    eventtype: JOI.string().allow(EventType.CHECKOUT).required(),
+    book_id: JOI.number().required(),
+    member_id: JOI.number().required(),
+    date: JOI.date().required()
+})
+
+export const createReturnCirculationValidation = JOI.object({
+    eventtype: JOI.string().allow( EventType.RETURN).required(),
     book_id: JOI.number().required(),
     member_id: JOI.number().required(),
     date: JOI.date().required()

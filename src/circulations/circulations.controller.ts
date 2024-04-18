@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Logger, HttpStatus } from '@nestjs/common';
 import { CirculationsService } from './circulations.service';
-import { CreateCirculationDto, EventType, createCirculationValidation } from './dto/create-circulation.dto';
+import { CreateCirculationDto, EventType, createCheckoutCirculationValidation, createReturnCirculationValidation, } from './dto/create-circulation.dto';
 
 import { ApiHeader, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { HttpError } from 'src/errors/custom.errors';
@@ -34,7 +34,7 @@ export class CirculationsController {
   })
   async createBorrow(@Body() createCirculationDto: CreateCirculationDto) {
     try {
-      await createCirculationValidation.validateAsync(createCirculationDto);
+      await createCheckoutCirculationValidation.validateAsync(createCirculationDto);
     } catch (error) {
       this.logger.error(`Inside ${this.createBorrow.name}:${error.message}`);
       throw HttpError(
@@ -68,7 +68,7 @@ export class CirculationsController {
   })
   async returnCirculation(@Body() createCirculationDto: CreateCirculationDto) {
     try {
-      await createCirculationValidation.validateAsync(createCirculationDto);
+      await createReturnCirculationValidation.validateAsync(createCirculationDto);
     } catch (error) {
       this.logger.error(`Inside ${this.createBorrow.name}:${error.message}`);
       throw HttpError(
